@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+    <form rel="help" enctype="application/x-www-form-urlencoded" action="/submit_form" method="get" target="_blank" novalidate>
+        <fieldset>
+            <legend>Sign Up</legend>
+        <label for="email">enter email</label>
+        <input type="text" name="email" id="email" autocomplete="on"> 
+        <label for="username">enter username</label>
+        <input type="text" name="username" id="username"> 
+        
+        <label for="language">Select one of the programming language</label>
+        <input list="languages" name="language" id="language">
+        <datalist id="languages">
+            <option value="java"></option>
+            <option value="js"></option>
+            <option value="c++"></option>
+            <option value="python"></option>
+        </datalist>
+        
+        <input type="textarea" name="" id="">
+
+        <textarea name="MLtext" id=""></textarea>
+
+        <select name="selectNum" id="selectNum">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" steps="12">
+        <details>
+            <summary>topics</summary>
+            topics details are here
+        </details>
+
+        <input type="submit">
+         <button type="reset">Reset Form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
